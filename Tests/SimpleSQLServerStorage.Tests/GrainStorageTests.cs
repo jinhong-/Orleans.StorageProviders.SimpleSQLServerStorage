@@ -41,7 +41,7 @@ namespace SimpleSQLServerStorage.Tests
             // Optional. 
             // By default, the next test class which uses TestignSiloHost will
             // cause a fresh Orleans silo environment to be created.
-            StopAllSilos();
+            //StopAllSilos();
         }
 
 
