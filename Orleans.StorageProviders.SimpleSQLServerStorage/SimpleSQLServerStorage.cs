@@ -112,7 +112,7 @@ namespace Orleans.StorageProviders.SimpleSQLServerStorage
                     grainType, primaryKey, grainReference, this.sqlconnBuilder.DataSource + "." + this.sqlconnBuilder.InitialCatalog);
             }
 
-            object state = null;
+            object state = grainState.State;
             var stateType = grainState.State.GetType();
             //(value);
             using (var db = new KeyValueDbContext(this.sqlconnBuilder.ConnectionString))
